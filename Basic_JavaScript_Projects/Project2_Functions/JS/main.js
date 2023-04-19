@@ -5,3 +5,10 @@ function myFunction(){ //This line is naming a function 'myFunction'
     //This line above tells to get element by the specified id, then to change an html element, and to print the 
     //variables value 'sentence'
 }
+
+function addFunction(){
+    
+    var sum = 7+17;
+    document.getElementById("example2").innerHTML = sum;
+}
+
