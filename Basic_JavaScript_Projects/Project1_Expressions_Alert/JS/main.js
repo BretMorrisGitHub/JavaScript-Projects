@@ -4,3 +4,6 @@ var sent2 = "and this is the end of the string."; //This line defines the 'sent2
 document.write(sent1 + sent2); //This line prints two variables, and concatenates them
 
 document.write(152/3); //This line is an example of printing an expression
+function displayDate(){
+    document.getElementById("demo").innerHTML = Date();
+}
