@@ -1,12 +1,14 @@
-let slideIndex = 1;
+let slideIndex = 1;//this sets a one time variable 'slideIndex'
 
 function plusSlides(n){
     showSlides(slideIndex += n);
-}
+}//this function calls the 'showSlides' function, with 'slideIndex += n' as its
+//parameters
 
 function currentSlide(n){
     showSlides(slideIndex = n);
-}
+}//this function calls the 'showSlides' function, with 'slideIndex = n' as its
+//parameters
 
 function showSlides(n){
     let i;
@@ -18,4 +20,5 @@ function showSlides(n){
     }
     slides[slideIndex-1].style.display = "block";
 
-}
+}//this function declares a variable 'i', and a variable 'slides', and has two
+//if statements to find the state of the slideshow. 
