@@ -4,8 +4,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <script>
-        $(document).ready(function(){
-            $("html").append(
+        $(document).ready(function(){//This section of code adds these paragraphs when the 
+            $("html").append(//html document is ready using jQuery '.append'
                 "<body>\
                     <div id='container'>\
                         <div id='inner'>\
@@ -17,14 +17,14 @@
                     </div>\
                 </body>"
             );
-            $("#3").css({"color":"red"});
-            $("#2").click(function() {
-                $('h1').hide();
+            $("#3").css({"color":"red"});//This uses jQuery '.css' to add css to specified elements
+            $("#2").click(function() {//This uses '.click' to do a specified task when clicked
+                $('h1').hide();//It uses the '.hide' jQuery to hide specified elements
             });
-            $("p").click(function (){
-                console.log("You clicked a paragraph!");
+            $("p").click(function (){//This again uses .click to perform a task when clicked
+                console.log("You clicked a paragraph!");//This writes in the console log a paragraph
             });
-            $("#1").fadeOut(2000);
+            $("#1").fadeOut(2000);//This uses .fadeout to fade away an element for a specified amout of time
         });
     </script>
     <body>
