@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function(){
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>This Paragraph will fade out</p>\
+                            <p id='2'>This paragraph hides the heading</p>\
+                            <p id='3'>This paragraph is red</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#3").css({"color":"red"});
+            $("#2").click(function() {
+                $('h1').hide();
+            });
+            $("p").click(function (){
+                console.log("You clicked a paragraph!");
+            });
+            $("#1").fadeOut(2000);
+        });
+    </script>
+    <body>
+
+    </body>
+</html>
