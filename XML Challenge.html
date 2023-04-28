@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Computer = "<computer>"+
+                "<brand>NZXT</brand>"+
+                "<RAM>16GB</RAM>"+
+                "<CPU>4GHz</CPU>"+
+                "<SSD>2TB</SSD>"+
+                "</computer>";
+            
+            //creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Computer, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("brand")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
